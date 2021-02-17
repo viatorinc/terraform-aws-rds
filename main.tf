@@ -62,6 +62,8 @@ resource "aws_db_instance" "default" {
 
   monitoring_interval = var.monitoring_interval
   monitoring_role_arn = var.monitoring_role_arn
+
+  replicate_source_db = var.replicate_source_db
 }
 
 resource "aws_db_parameter_group" "default" {
